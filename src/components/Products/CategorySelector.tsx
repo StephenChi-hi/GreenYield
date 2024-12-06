@@ -1,4 +1,4 @@
-import { ParagraphLink1, ParagraphLink2 } from "@/components/Text";
+import { Paragraph1, Paragraph2 } from "@/components/Text";
 import React, { useState } from "react";
 
 interface Category {
@@ -30,9 +30,9 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
   return (
     <div className="flex flex-col w-full min-h-screen min-w-fit overflow-y-auto scrollbar-hide  pr-4 xl:pl-0 p-4">
       <div className=" xl:block hidden">
-        <ParagraphLink2 className=" text-[16px] font-semibold pb-2">
+        <Paragraph2 className=" text-[16px] font-semibold pb-2">
           Categories
-        </ParagraphLink2>
+        </Paragraph2>
         <hr />
       </div>
 
@@ -67,7 +67,7 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
         }}
       >
         {" "}
-        <ParagraphLink1 className=" text-center">All </ParagraphLink1>
+        <Paragraph2 className=" text-center">All </Paragraph2>
       </button>
       {mainCategories.map((category) => (
         <div key={category.id} className="">
@@ -84,9 +84,9 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
               )
             }
           >
-            <ParagraphLink1 className="whitespace-nowrap text-center">
+            <Paragraph2 className="whitespace-nowrap text-center">
               {category.name}
-            </ParagraphLink1>
+            </Paragraph2>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -122,9 +122,9 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
                 }}
               >
                 <p>-</p>
-                <ParagraphLink1 className="whitespace-nowrap">
+                <Paragraph2 className="whitespace-nowrap">
                   {category.name}
-                </ParagraphLink1>
+                </Paragraph2>
               </button>
               {subCategories(category.id).map((subCategory) => (
                 <button
@@ -141,9 +141,9 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
                   }}
                 >
                   <p>-</p>
-                  <ParagraphLink1 className="whitespace-nowrap">
+                  <Paragraph2 className="whitespace-nowrap">
                     {subCategory.name}
-                  </ParagraphLink1>
+                  </Paragraph2>
                 </button>
               ))}
             </div>

@@ -66,11 +66,11 @@ function NavBar() {
                 </Paragraph1>
               </Link>
 
-              <Link href="/story">
+              <Link href="/market">
                 {" "}
                 <Paragraph1
                   className={
-                    pathname === "/story"
+                    pathname === "/market"
                       ? "text-primary font-bold "
                       : " hover:font-bold "
                   }
@@ -104,10 +104,10 @@ function NavBar() {
               </Link>
             </div>
             <Button
-              text="Get Started"
+              text="Dashboard "
               href="/apply"
               isLink={true}
-              additionalClasses=" border-0  min-w-[152px] hidden lg:block"
+              additionalClasses=" border-0  min-w-[152px]- hidden lg:block"
             />{" "}
             <div className="lg:hidden">
               <button onClick={toggleMenu} className="focus:outline-none">
@@ -201,7 +201,7 @@ function NavBar() {
                   </Paragraph1>
                 </Link>
                 <Button
-                  text="Get sStarted"
+                  text="Dashboard"
                   href="/apply"
                   isLink={true}
                   onClick={toggleMenu}

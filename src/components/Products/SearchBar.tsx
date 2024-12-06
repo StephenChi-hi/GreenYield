@@ -18,7 +18,7 @@ function SearchBar({ }: SearchBarProps) {
 
   return (
     <div>
-      <div className="flex justify-between items-center p-2 px-3 bg-bg_gray rounded-lg w-full [250px] cursor-pointer">
+      <div className="flex justify-between items-center p-2 px-4 bg-bg_gray rounded-full w-[500px] [250px] cursor-pointer">
         <input
           type="text"
           placeholder="Search for a product..."

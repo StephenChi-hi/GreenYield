@@ -1,5 +1,5 @@
 import React from "react";
-import { Paragraph2, ParagraphLink2 } from "../Text";
+import { Paragraph2 } from "../Text";
 import Button from "../Button";
 import Link from "next/link";
 import useCartStore from "../../stores/cartStore";
@@ -80,7 +80,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
               onClick={handleAddToCart}
               className="whitespace-nowrap text-[13px] flex justify-center py-1 bg-primary hover:bg-black rounded-lg w-full  text-white "
             >
-              <ParagraphLink2>Add to Cart</ParagraphLink2>
+              <Paragraph2>Add to Cart</Paragraph2>
             </button>
           )}{" "}
         </div>
